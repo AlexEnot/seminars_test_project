@@ -1,0 +1,34 @@
+# Общие исключения для всего проекта
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+.env
+.env.local
+*.env.*.local
+
+# Клиентская часть (React + Vite)
+client/node_modules/
+client/dist/
+client/.cache/
+client/.temp/
+client/.tmp/
+client/*.tsbuildinfo
+client/coverage/
+client/build/
+
+# Серверная часть (JSON Server)
+server/node_modules/
+server/seminars.json  # Игнорируем файл с данными (используйте пример для шаблона)
+server/*.log
+
+# Системные файлы
+/Desktop.ini
+/~$*
+
+# Дополнительно (если используете)
+/package-lock.json
+/yarn.lock
+/.pnp
+/.pnp.js
